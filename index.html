@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Activity</title>
+</head>
+<body>
+    <div class="container pt-5 col-12 col-md-20 d-flex align-items-center justify-content-center">
+        <div class="main-container col-12 p-5">
+            <h1 class="text-center">ABC Electric Company</h1>
+            <h4 class="text-center bt">Quezon City</h4>
+            <h3 class="text-center bt">ELECTRIC BILL STATEMENT OF ACCOUNT</h3>
+
+            <div class="col-12 d-flex align-items-center justify-content-center bt pt-4 pb-4 bb flex-column">
+              <div class="d-flex flex-column col-12 col-md-6 justify-content-center">
+                <div class="form-group">
+                  <label>Full Name:</label>
+                  <input type="email" class="form-control" placeholder="Example: John Marzan">
+              </div>
+              <div class="form-group mt-2">
+                  <label>Adress:</label>
+                  <input type="email" class="form-control" placeholder="Example: Quezon City">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Previous Reading</label>
+                <input type="email" class="form-control prev-r" id="exampleFormControlInput1" placeholder="Example: 5982">
+                </div>
+              <div class="form-group mt-2">
+                <label for="exampleFormControlInput2">Present Reading</label>
+                <input type="email" class="form-control pre-r" id="exampleFormControlInput2" placeholder="Example: 6082">
+              </div>
+              <div class="form-group mt-2 d-flex align-items-center">
+                <label for="exampleFormControlInput1">KWh Consumed:  </label>
+                <h4 class="display-total">XXX</h3>
+              </div>
+                <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center pt-4">
+                <div class="generation-charge-container col-12 col-md-6">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Generation Charges</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col">Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Generation System Charge</th>
+                            <td class="gsc-rate">3.5588</td>
+                            <td class="gsc-total">0</td>
+                          </tr>
+                          <tr>
+                            <td>Powet Act Reduction</th>
+                            <td class="par-rate">-0.3</td>
+                            <td class="par-total">0</td>
+                          </tr>
+                          <tr>
+                            <td>Franchise and Benefits</th>
+                            <td class="fab-rate">0.0245</td>
+                            <td class="fab-total">0</td>
+                          </tr>
+                          <tr>
+                            <td>Forex Adjustment Charge</th>
+                            <td class="fac-rate">-0.0065</td>
+                            <td class="fac-total">0</td>
+                          </tr>
+                          <tr>
+                            <td class="sub-total">Sub-total</th>
+                            <td></td>
+                            <td class="GSC_TOTAL sub-total">0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-center pt-4">
+              <div class="transmission-charges-container col-12 col-md-6">
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Transmission Charges</th>
+                          <th scope="col">Rate</th>
+                          <th scope="col">Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Transmission System Charge</th>
+                          <td class="tsc-rate">1.0907</td>
+                          <td class="tsc-total">0</td>
+                        </tr>
+                        <tr>
+                          <td>System Loss Charge</th>
+                          <td class="slc-rate">0.8726</td>
+                          <td class="slc-total">0</td>
+                        </tr>
+                        <tr>
+                          <td class="sub-total">Sub-total</th>
+                          <td></td>
+                          <td class="TC_TOTAL sub-total">0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-center pt-4">
+            <div class="distribution-charges-container col-12 col-md-6">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Distribution Charges</th>
+                        <th scope="col">Rate</th>
+                        <th scope="col">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Distribution System Charge</th>
+                        <td class="dsc-rate">0.7891</td>
+                        <td class="dsc-total">0</td>
+                      </tr>
+                      <tr>
+                        <td>Supply System Charge</th>
+                        <td class="ssc-rate">0.689</td>
+                        <td class="ssc-total">0</td>
+                      </tr>
+                      <tr>
+                        <td>Retail Customer Meter Charge</th>
+                        <td class="rcmc-rate">0.3944</td>
+                        <td class="rcmc-total">0</td>
+                      </tr>
+                      <tr>
+                        <td class="sub-total">Sub-total</th>
+                        <td></td>
+                        <td class="DC_TOTAL sub-total">0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-center pt-4">
+            <div class="universal-charges-container col-12 col-md-6">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Universal Charge</th>
+                        <th scope="col">Rate</th>
+                        <th scope="col">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Missionary Electrification</th>
+                        <td class="mec-rate">0.0373</td>
+                        <td class="mec-total">0</td>
+                      </tr>
+                      <tr>
+                        <td>Environmental Charges</th>
+                        <td class="envc-rate">0.0025</td>
+                        <td class="envc-total">0</td>
+                      </tr>
+                      <tr>
+                        <td class="sub-total">Sub-total</th>
+                        <td></td>
+                        <td class="UC_TOTAL sub-total">0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-center pt-4">
+            <div class="other-charges-container col-12 col-md-6">
+              <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Other Charges</th>
+                      <th scope="col">Rate</th>
+                      <th scope="col">Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Loan Condonation</th>
+                      <td class="lc-rate">-0.1591</td>
+                      <td class="lc-total">0</td>
+                    </tr>
+                    <tr>
+                      <td>Lifeline Rate Subsidy</th>
+                      <td class="lrs-rate">0.0883</td>
+                      <td class="lrs-total">0</td>
+                    </tr>
+                    <tr>
+                      <td class="sub-total">Sub-total</th>
+                      <td></td>
+                      <td class="OC_TOTAL sub-total">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-center pt-4">
+            <div class="tax-charge-container col-12 col-md-6">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Value Added TAX</th>
+                        <th scope="col">Rate</th>
+                        <th scope="col">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Generation</th>
+                        <td class="gtc-rate">0.2706</td>
+                        <td class="gtc-total">0</td>
+                      </tr>
+                      <tr>
+                        <td>Transmission</th>
+                        <td class="ttr-rate">0.1158</td>
+                        <td class="ttr-total">0</td>
+                      </tr>
+                      <tr>
+                        <td>Distribution</th>
+                        <td class="dtr-rate">0.22</td>
+                        <td class="dtr-total">0</td>
+                      </tr>
+                      <tr>
+                        <td>System Loss</th>
+                        <td class="stc-rate">0.075</td>
+                        <td class="stc-total">0</td>
+                      </tr>
+                      <tr>
+                        <td class="sub-total">Sub-total</th>
+                        <td></td>
+                        <td class="VAT_TOTAL sub-total">0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+
+          <div class="d-fle">
+            <h2 class="currAmountDue text-center">Current Amount Due: ₱<span class="currADT">XXXX</span></h2>
+          </div>
+        </div>
+    </div>
+        </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src=".//js/app.js"></script>
+</body>
+</html>
